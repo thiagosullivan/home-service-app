@@ -17,8 +17,8 @@ export default function Header() {
                         style={styles.userImage}
                     />
                     <View>
-                        <Text style={{color: Colors.WHITE}}>Welcome,</Text>
-                        <Text style={{color: Colors.WHITE, fontSize: 20,}}>{user?.fullName}</Text>
+                        <Text style={{color: Colors.WHITE, fontFamily: 'outfit'}}>Welcome,</Text>
+                        <Text style={{color: Colors.WHITE, fontSize: 20,fontFamily: 'outfit-medium'}}>{user?.fullName}</Text>
                     </View>
                 </View>
                 <FontAwesome name="bookmark-o" size={27} color="white" />
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         width: '85%',
         fontSize: 16,
+        fontFamily: 'outfit',
     },
     searchButton: {
         backgroundColor: Colors.WHITE,
